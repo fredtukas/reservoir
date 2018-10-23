@@ -1,0 +1,209 @@
+<!--navbar-->
+
+<template name="nav">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="80px" height="30px"></a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Casting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Presse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Critiques spectateurs</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</template>
+
+
+
+<!--carousel-->
+
+<template name="carousel">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/1.jpeg" alt="First slide" height="400px">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/2.PNG" alt="Second slide" height="400px">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/3.jpeg" alt="Third slide" height="400px">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+</template>
+
+
+<!--jumbotron-->
+
+<template name="jumbo">
+    <div class="jumbotron">
+        <h1 class="display-4">RESERVOIR DOGS</h1>
+        <p class="lead">Après un hold-up manqué, des cambrioleurs de haut vol font leurs comptes 
+          dans une confrontation violente, <br>pour découvrir lequel d'entre eux les a trahis. </p>
+        <hr class="my-4">
+        <p class="dogs">Reservoir Dogs est un film américain écrit et réalisé par Quentin Tarantino et sorti en 1992. Il décrit une bande de truands et les événements qui surviennent 
+          avant et après un braquage raté.</p>
+<p>
+  <a class="btn btn-danger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Lire la suite
+  </a>
+</p>  
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+       <p> Première réalisation de Tarantino, 
+        ce film indépendant compte notamment Harvey Keitel, Tim Roth, Michael Madsen et Steve Buscemi 
+        dans sa distribution et introduit dans ses thèmes et son esthétique ce qui deviendra la marque de fabrique de Tarantino : 
+        dialogues stylisés, narration non linéaire, références à la pop culture, violence et langage vulgaire.</p>
+        <p>Tarantino avait à l'origine l'intention de le réaliser en amateur avec des moyens très limités mais l'implication 
+        de Keitel dans le projet a permis à celui-ci de prendre plus d'ampleur. </p>
+        <p>Le film a connu un succès commercial 
+        modeste dans l'absolu mais très important pour son budget et fut très bien accueilli par la critique. Présenté en 
+        compétition lors de festivals de cinéma, il a remporté plusieurs récompenses.</p>
+        <p>Il est désormais considéré comme un film 
+        culte très important dans l'histoire du cinéma indépendant et a permis à Tarantino de se faire connaître dans le milieu du 
+        cinéma, 
+        ouvrant ainsi la voie du succès pour son deuxième film, Pulp Fiction. </p>
+    </div>
+  </div>    
+</div>
+
+</template>
+
+
+
+<template name="card">
+<div class="container d-flex justify-content-center">
+    <div class="row my-2">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/white.jpg" height="200px" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"> Mr White</h5>
+          <p class="card-text">Harvey Keitel, est un acteur américain, parfois producteur de cinéma, né le 13 mai 1939 à Brooklyn, New York.
+              Il s'est distingué dans des films qui ont marqué l'histoire du cinéma américain comme Taxi Driver, Thelma et Louise, 
+              Smoke, Bad Lieutenant, La Leçon de Piano, Pulp Fiction ou Reservoir Dogs.
+              Reconnu comme l'un des grands acteurs du cinéma américain, il n'a cependant 
+              jamais été récompensé par un Oscar, mais a reçu des prix prestigieux comme l'Ours d'argent à la Berlinale.</p>
+          <a href="https://fr.wikipedia.org/wiki/Harvey_Keitel" target="blank" class="btn btn-danger">Bio complète</a>
+        </div>
+      </div>
+
+      <div class="card mx-2" style="width: 18rem;">
+        <img class="card-img-top" src="images/orange.jpg" height="200px" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"> Mr Orange</h5>
+          <p class="card-text">Tim Roth est un acteur, réalisateur et producteur de cinéma britannique, 
+            né le 14 mai 1961 à Dulwich (Londres).
+              Tim Roth est découvert par le grand public grâce aux films Reservoir Dogs et 
+              Pulp Fiction de Quentin Tarantino.
+              Il apparaît ensuite dans d'autres films américains comme La Planète des singes, Funny Games U.S. 
+              et L'Incroyable Hulk. Il est également connu pour son rôle dans la série télévisée Lie to Me.</p>
+              <p><br><br></p>
+          <a href="https://fr.wikipedia.org/wiki/Tim_Roth" target="_blank" class="btn btn-danger">Bio complète</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/blonde.jpeg" height="200px" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"> Mr Blonde</h5>
+          <p class="card-text">Après avoir traqué Val Kilmer jusqu'à la mort dans Kill Me Again en 1989 puis avoir été le petit ami 
+            compréhensif de Susan Sarandon dans le film culte Thelma et Louise en 1991, c'est en 1992 qu'il acquiert la notoriété 
+            auprès du grand public grâce à son interprétation sadique et terrifiante de Mr. Blonde dans Reservoir Dogs, 
+            le premier film de Quentin Tarantino qui fait sensation à Cannes. </p>
+            <p><br><br></p>
+          <a href="https://fr.wikipedia.org/wiki/Michael_Madsen" target="blank" class="btn btn-danger">Bio complète</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center">
+        <div class="row my-2">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/pink.jpg" height="200px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mr Pink</h5>
+              <p class="card-text">Steve Buscemi est un acteur, réalisateur, scénariste et producteur de cinéma américain, 
+                né le 13 décembre 1957 à Brooklyn (New York). Acteur éclectique qui tourne aussi bien dans des blockbusters 
+                que dans de nombreux films indépendants, il est surtout connu pour ses collaborations avec Joel et Ethan Coen, 
+                notamment dans Fargo et 
+                The Big Lebowski ainsi que pour ses rôles dans Reservoir Dogs</p>
+              <a href="https://fr.wikipedia.org/wiki/Steve_Buscemi" target="blank" class="btn btn-danger">Bio complète</a>
+            </div>
+          </div>
+    
+          <div class="card mx-2" style="width: 18rem;">
+            <img class="card-img-top" src="images/brown.jpeg" height="200px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mr Brown</h5>
+              <p class="card-text">Quentin Tarantino, né le 27 mars 1963 à Knoxville dans le Tennessee, aux États-Unis,
+                 est un réalisateur, scénariste, producteur et acteur américain. Il acquiert une célébrité internationale 
+                 dans les années 1990, en tant que réalisateur de films indépendants avec ses deux premiers longs métrages, 
+                 Reservoir Dogs (1992) et Pulp Fiction (1994), 
+                et remporte pour ce dernier la Palme d'or à Cannes.</p>
+              <a href="https://fr.wikipedia.org/wiki/Quentin_Tarantino" target="blank" class="btn btn-danger">Bio complète</a>
+            </div>
+          </div>
+    
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/blue.jpeg" height="200px" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mr Blue</h5>
+              <p class="card-text">Edward Bunker a joué dans plusieurs films et séries TV, la plupart du temps des rôles de brigands, 
+                et toujours pour de brèves apparitions. Il lui est également arrivé de servir de conseiller technique, 
+                ou de participer à la production ou l'écriture de films. Il a participé à l'adaptation de ses deux 
+                romans pour le cinéma, l'un en tant que scénariste, 
+                l'autre en tant que coproducteur. </p>
+              <a href="https://fr.wikipedia.org/wiki/Edward_Bunker" target="blank" class="btn btn-danger">Bio complète</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</template>
+
+
+<template name="footer">
+
+  <div class="card text-center">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>
+</template>

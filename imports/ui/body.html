@@ -1,0 +1,80 @@
+
+
+<body>
+
+{{> nav}}
+{{> carousel}}
+{{> jumbo}}
+{{> card}}
+
+    <div class="container">
+  
+      <header>
+  
+        <h1>Critiques spectateurs</h1>
+
+
+
+        <form class="new-task">
+            <input type="text" name="titre" placeholder="Titre:" />
+            <input type="text" name="desc" placeholder="Description:" />
+            <input type="text" name="url" placeholder="Lien:" />
+          <button type="submit" class="btn btn-danger">Envoyer</button>
+          </form>
+
+
+      </header>
+  
+   
+  
+      
+  
+       
+  
+        <div class="container">
+          <div class="row">
+
+            {{#each tasks}}
+           {{> task}}
+           {{/each}}
+      </div>
+    </div>
+       
+  
+    </div>
+
+    {{> footer}}
+
+     <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <form class="momod">
+             <input type="text" name="modif1" placeholder="{{input1}}" id="element1">
+             <input type="text" name="modif2" placeholder="{{input2}}" id="element2">
+             <input type="text" name="modif3" placeholder="{{input3}}" id="element3">
+             <input type="hidden" name="editId" placeholder="" id="edit-id">
+             <button type="submit" class="btn btn-primary">Save changes</button>
+           </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+   
+  
+  
+  
+  

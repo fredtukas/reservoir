@@ -1,0 +1,39 @@
+
+body{
+    background-color: darkgray;
+}
+
+header{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.delete{
+    width: 25%;
+    
+}
+
+.display-4{
+    text-align: center;
+    color:white;
+    
+}
+
+.lead{
+    text-align: center;
+    color:white;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.dogs{
+    color:white;
+}
+
+.jumbotron{
+    background-color: rgb(26, 26, 27);
+}
+
